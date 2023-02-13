@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Account</title>
+    
+</head>
+<body>
+   <section>
+    <form class="formulario" >
+        <h1 class="titulo" >Create Account</h1>
+        <p class="letra">Nombre</p>
+        <input  type="text" id="name" name="name" class="rectangulo">
+        <div class="errorCubo" id="errorNombre">
+         <img class="falloImg" src="./images/error-icon.svg" id="falloImg">
+            <p class="textFallo" id="textFallo">Rellene este campo</p>
+            <img class="aciertoImg" id="aciertoImg" src="./images/success-icon.svg" >
+           
+        </div>
+        
+        <p class="letra">Email</p>
+        <input type="email" class="rectangulo" id="mail" name="mail">
+        <div class="errorCubo2" id="errorEmail">
+            <img class="falloEmail" src="./images/error-icon.svg" id="falloEmail">
+            <p class="textFallo2" id="textFallo2">Rellene este campo</p>
+            <p class="invalido" id="invalido">Email Inválido</p>
+               <img class="aciertoEmail" id="aciertoEmail" src="./images/success-icon.svg" >
+              
+           </div> 
+        <p class="letra">Clave</p>
+        <input   type="password" class="rectangulo" id="clave" name="clave" pattern="{1,8}">
+        <div class="errorCubo3" id="errorClave">
+            <img class="falloClave" src="./images/error-icon.svg" id="falloClave">
+               <p class="textFallo3" id="textFallo3">Rellene este campo</p>
+               <p class="caracteres" id="caracteres">No debe tener más de 8 caracteres</p>
+               <img class="aciertoClave" id="aciertoClave" src="./images/success-icon.svg" >
+              
+           </div>  
+        <p class="letra">Confirme su clave</p>
+        <input  class="rectangulo" type="password" id="clave2" name="clave2"> 
+        <div class="errorCubo4" id="errorClave2">
+            <img class="falloClave2" src="./images/error-icon.svg" id="falloClave2">
+               <p class="textFallo4" id="textFallo4">Rellene este campo</p>
+               <p class="contIguales" id="contIguales">Las contraseñas no coinciden</p>
+               <img class="aciertoClave2" id="aciertoClave2" src="./images/success-icon.svg" >
+              
+           </div> 
+        <input type="submit" value="ENVIAR" id="boton" class="boton" >
+    </form>
+ </section> 
+ <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
